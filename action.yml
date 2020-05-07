@@ -1,4 +1,4 @@
-name: 'tflint'
+name: 'terraform-lint-with-diff'
 description: 'Uses terraform fmt to check for any formatting issues'
 runs:
   using: 'docker'
