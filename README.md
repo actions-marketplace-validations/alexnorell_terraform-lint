@@ -1,7 +1,6 @@
-# Terraform Lint
+# Terraform Lint with Diff
 
-
-A Github Action to ensure your terraform files are formatted correctly
+A GitHub action to check for and display any formatting issues found with `terraform fmt`.
 
 ## Usage
 
@@ -11,13 +10,11 @@ name: terraform-lint
 on: [push, pull_request]
 
 jobs:
-  delivery:
-
+  lint:
     runs-on: ubuntu-latest
-
     steps:
     - name: Check out code
       uses: actions/checkout@master
     - name: Lint Terraform
-      uses: actionshub/terraform-lint@master
+      uses: actionshub/terraform-lint-with-diff@master
 ```
