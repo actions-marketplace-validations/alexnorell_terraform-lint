@@ -1,9 +1,8 @@
-name: 'Terraform-Lint'
-author: 'Jason Field'
-description: 'Validates your terraform files are formatted correctly'
+name: 'tflint'
+description: 'Uses terraform fmt to check for any formatting issues'
 runs:
   using: 'docker'
   image: 'Dockerfile'
 branding:
-  icon: 'tool'
-  color: 'red'
+  icon: 'globe'
+  color: 'purple'
